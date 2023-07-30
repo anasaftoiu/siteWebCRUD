@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  font-family: "Courier New", monospace, sans-serif;
+  font-weight: 800; 
+  text-decoration: none;   
+}
+ul{
+	text-align: center;
+	color: chocolate;
+	padding-left: 3%;
+}
+a{
+  margin-right: 0%;
+  padding-right: 0%;
+  text-align: right;
+  position: relative;
+  text-decoration: none;
+  font-family: "Courier New", monospace, sans-serif;  
+  color: 	#ADFF2F;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px; 
+}
+table{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+	border: 3px solid rgb(6, 30, 18);
+	color: #190e33;
+	border-collapse: collapse;
+}
+table, td {
+	border: 1px solid black;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	
+}
+th {
+	border: 1px solid rgb(44, 148, 60);
+	background-color: rgb(31, 21, 67);
+	color: rgb(61, 42, 42);
+	padding: 5px;
+	text-align: center;
+}

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Show</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+  <div class="container">
+    <ul>
+      <li><a class="" href="http://localhost:8080">Home</a></li>
+      <li><a href="/show">Show</a></li>
+    </ul>
+  </div>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Control</th>
+        </tr>
+    </thead>
+    <tbody> 
+            <td>61bf9sc12331378</td>
+            <td>gg</td>
+            <td>g</td>
+            <td>
+                <a href="/edit/61bf9sc12331378">
+                  <span class="blue">View</span>
+                </a>
+                <a href="/delete/61bf9sc12331378">
+                  <span class="pink">Delete</span>
+                </a>
+            </td>   
+        </tr>
+        <tr> 
+          <td>657dschj28s82</td>
+          <td>Diana</td>
+          <td>diana5@yahoo.com</td>
+          <td>
+              <a href="/edit/657dschj28s82">
+                <span class="blue">View</span>
+              </a>
+              <a href="/delete/657dschj28s82">
+                <span class="pink">Delete</span>
+              </a>
+          </td>   
+      </tr>
+      <tr>  
+        <td>157dschsdsadsas83</td>
+        <td>Dana</td>
+        <td>dana33@yahoo.com</td>
+        <td>
+            <a href="/edit/157dschsdsadsas83">
+              <span class="blue">View</span>
+            </a>
+            <a href="/delete/157dschsdsadsas83">
+              <span class="pink">Delete</span>
+            </a>
+        </td>   
+    </tr>
+    </tbody>
+    <tbody>
+      <% students.forEach((student)=>{%>
+        <tr>
+          <td><%- student._id %></td>
+          <td><%- student._name %></td>
+          <td><%- student._email %></td>
+          <td>
+            <a href="/edit/%= student._id %">
+              <span class="blue">View</span>
+            </a>
+            <a href="#">
+              <span class="pink">Delete</span>
+            </a>
+        </td>   
+        </tr>
+      })
+    </tbody>
+</table>
+</div>
+</body>
+</html>
